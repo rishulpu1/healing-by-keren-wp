@@ -547,7 +547,10 @@ function healing_by_keren_scripts_loader() {
 	wp_enqueue_script( 'owlJS', get_theme_file_uri( 'js/owl.carousel.min.js' ), array(), $theme_version, true );
 	wp_enqueue_script( 'mainjs', get_theme_file_uri( 'assets/dist/main.bundle.js' ), array(), $theme_version, true );
 	wp_enqueue_script( 'customjs', get_theme_file_uri( 'js/custom.js' ), array(), $theme_version, true );
-	wp_enqueue_script( 'videopopup', get_theme_file_uri( 'js/video-popup.js' ), array(), $theme_version, true );
+	if(is_page_template('home-page.php')){
+		wp_enqueue_script( 'videopopup', get_theme_file_uri( 'js/video-popup.js' ), array(), $theme_version, true );
+	}
+	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
