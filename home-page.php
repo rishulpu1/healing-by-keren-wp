@@ -9,7 +9,7 @@ get_header();
 
 the_post();
 ?>
-<div class="main-content masked-overflow"  id="all-page-content" style="margin-top:2750px;">
+
     
     <div class="container-fluid">
         <div class="row">
@@ -275,6 +275,6 @@ the_post();
 </div>
 </div>
 </div>
-</div>
+
 <?php
 get_footer();

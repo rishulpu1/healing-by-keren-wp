@@ -21,12 +21,13 @@
 <a href="#main" class="visually-hidden-focusable"><?php esc_html_e( 'Skip to main content', 'healing-by-keren' ); ?></a>
 
 <div id="wrapper">
-<div id="pre-loader" preload="preload">
+
+	<div id="pre-loader" preload="preload">
         <div class="loading-msg">The medicine you seek,<br>is seeking you</div>
         <div class="loading-msg2">Take a deep breath while we load your experience</div>
     </div>
     
-    
+
         <!-- <div id="animation-container"></div>-->
     
             
@@ -145,4 +146,10 @@
             </clipPath>
         </defs>
     </svg>
+	<?php if(is_page_template('home-page.php')){ ?>
 	<div id="skrollr-body"><!-- begin skrollr-body -->
+	<div class="main-content masked-overflow"  id="all-page-content" style="margin-top:2750px;">
+
+	<?php } else { ?>
+		<div class="main-content masked-overflow"  id="all-page-content" style="margin-top:150px;">
+	<?php } ?>

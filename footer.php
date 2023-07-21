@@ -1,5 +1,5 @@
 			
-		
+		</div>
 		<footer id="colophon" class="site-footer" role="contentinfo">
     
                     
@@ -61,7 +61,7 @@
 	</div><!-- close .container -->
 </footer><!-- close #colophon -->
 		
-		
+<?php if(is_page_template('home-page.php')){ ?>	
 		</div><!-- end skrollr-body -->
 		<!--Video Modal -->
 		<div class="video-popup">
@@ -73,7 +73,16 @@
             </div>
         </div>
     </div>
-		
+		<?php } ?>
+		<script>
+			// Wait for window load
+jQuery(window).load(function() {
+    // Animate loader off screen
+    //jQuery("#pre-loader").fadeOut("slow");
+    jQuery("#pre-loader").addClass('pre-loader-close');
+});
+
+		</script>
 	<?php
 		wp_footer();
 	?>

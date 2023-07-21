@@ -1,10 +1,4 @@
 
-// Wait for window load
-jQuery(window).load(function() {
-    // Animate loader off screen
-    //jQuery("#pre-loader").fadeOut("slow");
-    jQuery("#pre-loader").addClass('pre-loader-close');
-});
 
 
 jQuery(document).ready(function($) {
