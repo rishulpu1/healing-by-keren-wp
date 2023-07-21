@@ -9,6 +9,7 @@ get_header();
 
 $page_id = get_option( 'page_for_posts' );
 ?>
+<div class="container mt-5">
 <div class="row">
 	<div class="col-md-12">
 		<?php
@@ -23,5 +24,6 @@ $page_id = get_option( 'page_for_posts' );
 		?>
 	</div><!-- /.col -->
 </div><!-- /.row -->
+</div>
 <?php
 get_footer();

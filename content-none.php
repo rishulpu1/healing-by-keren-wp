@@ -5,6 +5,7 @@
 
 $search_enabled = get_theme_mod( 'search_enabled', '1' ); // Get custom meta-value.
 ?>
+<div class="container mt-5">
 <article id="post-0" class="post no-results not-found">
 	<header class="entry-header">
 		<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'healing-by-keren' ); ?></h1>
@@ -18,3 +19,4 @@ $search_enabled = get_theme_mod( 'search_enabled', '1' ); // Get custom meta-val
 		?>
 	</div><!-- /.entry-content -->
 </article><!-- /#post-0 -->
+		</div>

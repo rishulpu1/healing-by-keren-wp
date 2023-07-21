@@ -12,6 +12,7 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
+<div class="container mt-5">
 <div id="comments">
 	<?php
 		if ( comments_open() && ! have_comments() ) :
@@ -95,3 +96,4 @@ if ( post_password_required() ) {
 		comment_form();
 	?>
 </div><!-- /#comments -->
+	</div>

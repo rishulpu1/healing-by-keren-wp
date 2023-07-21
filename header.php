@@ -27,13 +27,24 @@
         <div class="loading-msg2">Take a deep breath while we load your experience</div>
     </div>
     
-
+	
         <!-- <div id="animation-container"></div>-->
     
-            
+		<?php if(is_page_template('home-page.php')){ ?>
         <div id="animation-container">
     
         </div> 
+		<?php } else { ?>
+			<div class="light-bg"></div>
+			<div class="site-borders">
+			
+				<div class="top-left-border corner-border" style="transform:translate(0px, 0px);"></div>
+				<div class="top-right-border corner-border" style="transform:scale(-1,1) translate(0px, 0px);"></div>
+
+				<div class="bottom-left-border corner-border" style="transform: scale(1,-1) translate(0px, 0px);"></div>
+				<div class="bottom-right-border corner-border" style="transform: scale(-1,-1) translate(0px, 0px);"></div>
+			</div>
+		<?php } ?>
 		<nav class="site-navigation" data-850="top[swing]:-100%;" data-980="top:0%;">
     
                 <a class="header-buy-tix-btn" href="#">BUY TICKETS</a>

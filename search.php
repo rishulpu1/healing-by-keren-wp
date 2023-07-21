@@ -6,7 +6,7 @@
 get_header();
 
 if ( have_posts() ) :
-?>	
+?>	<div class="container mt-5">
 	<header class="page-header">
 		<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'healing-by-keren' ), get_search_query() ); ?></h1>
 	</header>
@@ -23,6 +23,7 @@ else :
 			get_search_form();
 		?>
 	</article><!-- /#post-0 -->
+</div>
 <?php
 endif;
 wp_reset_postdata();
