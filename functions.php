@@ -527,7 +527,7 @@ function healing_by_keren_scripts_loader() {
 	$theme_version = wp_get_theme()->get( 'Version' );
 
 	// 1. Styles.
-	wp_enqueue_style( 'fontawesome', get_theme_file_uri( 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css' ), array(), $theme_version, 'all' );
+	wp_enqueue_style( 'fontawesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css', array(), null, 'all' );
 	wp_enqueue_style( 'megamenu', get_theme_file_uri( 'css/maxmegamenu/style.css' ), array(), $theme_version, 'all' );
 	wp_enqueue_style( 'owl', get_theme_file_uri( 'css/owl.carousel.min.css' ), array(), $theme_version, 'all' );
 	wp_enqueue_style( 'owltheme', get_theme_file_uri( 'css/owl.theme.default.min.css' ), array(), $theme_version, 'all' );
@@ -542,7 +542,7 @@ function healing_by_keren_scripts_loader() {
 	// 2. Scripts.
 	wp_enqueue_script( 'jquery', get_theme_file_uri( 'js/jquery.min.js' ), array(), $theme_version, true );
 	wp_enqueue_script( 'jqueryMigrate', get_theme_file_uri( 'js/jquery-migrate.min.js' ), array(), $theme_version, true );
-	wp_enqueue_script( 'skroller', get_theme_file_uri( 'https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js' ), array(), $theme_version, true );
+	wp_enqueue_script( 'skroller', 'https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js' , array(), null, true );
 	wp_enqueue_script( 'jquerySpritely', get_theme_file_uri( 'js/jquery.spritely.js' ), array(), $theme_version, true );
 	wp_enqueue_script( 'owlJS', get_theme_file_uri( 'js/owl.carousel.min.js' ), array(), $theme_version, true );
 	wp_enqueue_script( 'mainjs', get_theme_file_uri( 'assets/dist/main.bundle.js' ), array(), $theme_version, true );
